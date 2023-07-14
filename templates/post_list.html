@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Post List{%endblock%}
+
+{% block content %}
+
+
+
+{% for post in all %}
+    <div class='card'>
+    <a class='card-body' href="{% url 'details' post.id %}"  > {{ post.title }} </a></br>
+    </div>
+
+
+{% endfor %}
+
+{% endblock %}

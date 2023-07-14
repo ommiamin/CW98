@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Author List{%endblock%}
+
+{% block content %}
+
+
+
+{% for author in all %}
+    <div class='card'>
+    <a class='card-body' href="{% url 'authors' author.id %}"  > {{ author.name }} </a></br>
+    </div>
+
+
+{% endfor %}
+
+{% endblock %}
