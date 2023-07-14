@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}home{%endblock%}
+
+{% block content %}
+
+
+
+{% for post in all %}
+    <div class='card'>
+    <a class='card-body' href="{% url 'details' post.id %}"  > {{ post.title }} </a></br>
+    </div>
+
+
+{% endfor %}
+
+{% endblock %}

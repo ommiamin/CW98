@@ -1,0 +1,22 @@
+{%extends 'base.html' %}
+
+
+{% block title %}detail{%endblock%}
+
+{% block content %}
+    <a href="" class='btn btn-danger'>Delete</a>
+
+
+
+
+
+    <h1>{{ post.title }}</h1></hr>
+    <h2>{{ post.content }}</h2></hr>
+    <h3>{{post.pub_date}}</h3></hr>
+    <h4>{{ post.author }}</h4></hr>
+    <h5>{{ post.category }}</h5>
+    
+
+
+
+{% endblock %}
